@@ -35,6 +35,12 @@ export const Sidebar = styled.div`
 	}
 `;
 
+export const SidebarBrand = styled.div`
+padding-top: 32px;
+padding-bottom: 80px;
+
+`;
+
 export const Logo = styled(LogoSVG)`
 	width: 109px;
 	height: 24px;

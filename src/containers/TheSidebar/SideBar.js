@@ -1,7 +1,6 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { CSidebarBrand } from "@coreui/react";
 
 import {
 	Sidebar,
@@ -14,6 +13,7 @@ import {
 	BoxContainer,
 	FooterLogo,
 	TextBox,
+	SidebarBrand
 } from "./SideBar.styles";
 
 import { SpacedLines, NavItems, SideBarTopNavSection } from "../../components";
@@ -31,9 +31,9 @@ const TheSidebar = ({ type }) => {
 				</>
 			) : (
 				<>
-					<CSidebarBrand className="d-md-down-none" to="/">
+					<SidebarBrand>
 						<Logo />
-					</CSidebarBrand>
+					</SidebarBrand>
 					<RectangularBox>
 						<TextBox>
 							<SpacedLines />
