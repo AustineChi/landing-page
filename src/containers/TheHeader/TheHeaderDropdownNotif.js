@@ -29,9 +29,7 @@ const TheHeaderDropdownNotif = () => {
 						</small>
 					</div>
 					<CProgress size="xs" color="info" value={25} />
-					<small className="text-muted">
-						348 Processes. 1/4 Cores.
-					</small>
+			
 				</CDropdownItem>
 				<CDropdownItem className="d-block">
 					<div className="text-uppercase mb-1">
@@ -40,7 +38,6 @@ const TheHeaderDropdownNotif = () => {
 						</small>
 					</div>
 					<CProgress size="xs" color="warning" value={70} />
-					<small className="text-muted">11444GB/16384MB</small>
 				</CDropdownItem>
 				<CDropdownItem className="d-block">
 					<div className="text-uppercase mb-1">
@@ -49,7 +46,6 @@ const TheHeaderDropdownNotif = () => {
 						</small>
 					</div>
 					<CProgress size="xs" color="danger" value={90} />
-					<small className="text-muted">243GB/256GB</small>
 				</CDropdownItem>
 			</CDropdownMenu>
 		</CDropdown>
