@@ -29,7 +29,7 @@ const TheHeaderDropdownNotif = () => {
 						</small>
 					</div>
 					<CProgress size="xs" color="info" value={25} />
-			
+				
 				</CDropdownItem>
 				<CDropdownItem className="d-block">
 					<div className="text-uppercase mb-1">
