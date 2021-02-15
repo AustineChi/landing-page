@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors} from "../../../styles";
+import { colors, breakPoints} from "../../../styles";
 
 
 export const AddFlex = styled.div`
@@ -63,6 +63,9 @@ export const AccountContainer = styled.div`
     padding: 13px 27px;
     position: relative;
     margin: 10px 0;
+    @media (max-width: ${breakPoints.large}px) {
+        max-width: 400px;
+	}
 `
 
 export const Amount = styled.div`
