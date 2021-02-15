@@ -15,7 +15,7 @@ export const AddFlex = styled.div`
 
 
 export const Container = styled.div`
-    max-width: 1440px;
+    max-width: 960px;
     margin: 0 auto
 `
 
