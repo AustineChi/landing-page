@@ -1,0 +1,32 @@
+// Here you can add other styles
+.c-sidebar-nav-link {
+	white-space: normal !important;
+}
+
+.c-header {
+	background: #fff;
+	border: none;
+	height: 80px;
+}
+
+.c-sidebar {
+	.c-sidebar-brand {
+		padding: 32px 0 56px 0;
+		background-color: transparent;
+		display: block;
+		flex: 0;
+	}
+}
+
+.c-body {
+	background-color: $color-white;
+}
+
+.c-header-nav {
+	padding-right: 82px;
+}
+
+.nav-link {
+	display: unset;
+	padding: 0;
+}
