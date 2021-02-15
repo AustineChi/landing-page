@@ -30,7 +30,7 @@ const HeaderComponent = ({ type, next }) => {
 			) : type === "login" ? (
 				<LinkText>
 					Don’t have an account?
-					<HeaderLink to="/sign-up">Sign Up</HeaderLink>
+					<HeaderLink to="/sign-up"> Sign Up</HeaderLink>
 				</LinkText>
 			) : (
 				<LinkText>
