@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CRow, CCol, CProgress } from "@coreui/react";
-import { hexToRgba } from "@coreui/utils";
 
 import { CChartLine } from "@coreui/react-chartjs";
 
@@ -62,6 +61,13 @@ const defaultOptions = (() => {
 })();
 
 const Dashboard = () => {
+	const canvas = document.createElement('canvas');
+	const ctx = canvas.getContext("2d")
+	const gradient = ctx.createLinearGradient(0,0,500,0);
+	 gradient.addColorStop(0, 'rgba(250,74,132,0.26)');
+      gradient.addColorStop(0.5, 'rgba(250,74,132,0.0)');
+	  gradient.addColorStop(1, 'rgba(250,74,132,0.26)');
+
 	return (
 		<Layout>
 			<Container>
@@ -69,8 +75,7 @@ const Dashboard = () => {
 					<div>
 						<TopText bold={true}>Welcome back, Kathy</TopText>
 						<DescText>
-							Here’s what has been happening in the last
-							<Link to="/">7 days</Link>
+							Here’s what has been happening in the last <Link to="/"> 7 days</Link>
 						</DescText>
 					</div>
 					<AddButton>Add a sub account</AddButton>
@@ -172,11 +177,10 @@ const Dashboard = () => {
 									datasets={[
 										{
 											// label: 'Data One',
-											backgroundColor: hexToRgba(
-												"#fa4a84",
-												20
-											),
+											backgroundColor: gradient,
 											borderColor: "#fa4a84",
+											// border: 2px solid,
+											// backgroundImage: "linearGradient(180deg, rgba(250,74,132,0.26) 0%, rgba(250,74,132,0.00) 100%)",
 											data: [20, 40, 53, 64, 77, 70, 50],
 										},
 									]}
