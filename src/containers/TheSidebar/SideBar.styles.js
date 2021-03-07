@@ -36,18 +36,21 @@ export const Sidebar = styled.div`
 `;
 
 export const SidebarBrand = styled.div`
-padding-top: 32px;
-padding-bottom: 80px;
+	padding-top: 32px;
+	padding-bottom: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 
 `;
 
 export const Logo = styled(LogoSVG)`
-	width: 109px;
-	height: 24px;
+	height: 70px;
 `;
 
 export const FooterLogo = styled(FooterLogoSVG)`
 	margin: 32px 0;
+	height: 40px;
 `;
 
 export const BoxContainer = styled.div`

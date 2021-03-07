@@ -18,7 +18,7 @@ const SignIn = () => {
 		<Layout type={"login"}>
 			<Space height={"32px"} />
 			<Container>
-				<TopText>Welcome back to Prospa</TopText>
+				<TopText>Welcome back</TopText>
 				<DescText>A short description about account types</DescText>
 				<Form>
 					<TextInputField>

@@ -11,9 +11,8 @@ import {
 	SubText,
 	RectangularBox,
 	BoxContainer,
-	FooterLogo,
 	TextBox,
-	SidebarBrand
+	SidebarBrand,
 } from "./SideBar.styles";
 
 import { SpacedLines, NavItems, SideBarTopNavSection } from "../../components";
@@ -27,7 +26,7 @@ const TheSidebar = ({ type }) => {
 				<>
 					<SideBarTopNavSection />
 					<NavItems data={navigation} />
-					<FooterLogo />
+			
 				</>
 			) : (
 				<>
@@ -37,21 +36,17 @@ const TheSidebar = ({ type }) => {
 					<RectangularBox>
 						<TextBox>
 							<SpacedLines />
-							<TopText>
-								Create multiple <br />
-								sub-account
-							</TopText>
+							<TopText>Create your account</TopText>
 							<SubText>
-								{" "}
 								Organise your business finances easily <br />
-								with multiple accounts. No limits!{" "}
+								with multiple accounts. No limits!
 							</SubText>
 						</TextBox>
 						<BoxContainer>
 							<MoneyBox />
 						</BoxContainer>
 					</RectangularBox>
-					<FooterText>© 2020 Prospa Inc</FooterText>
+					<FooterText>© 2020 Austine Inc</FooterText>
 				</>
 			)}
 		</Sidebar>
